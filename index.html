@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Firebase</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="text-center margin-top-2">
+        <img src="images/stark-ico.png" style="width: 100px" alt="">
+    </div>
+    <div ng-controller="ctrlFire" class="container col-md-4 col-md-offset-4">
+        <input type="text" placeholder="Nombre" class="form-control" ng-model="stark.name" />
+        <input type="text" placeholder="Papel" class="form-control" ng-model="stark.role" />
+        <input type="text" placeholder="Edad (a ojo)" class="form-control" ng-model="stark.age" />
+        <div class="text-center">
+            <button class="btn btn-success btn-sm" ng-click="agregarProducto()">Agregar</button>
+            <button class="btn btn-danger btn-sm" ng-click="eliminarProducto()">Eliminar</button>
+        </div>
+        <h3 class="text-center list-header">&nbsp;Lista familia Stark</h3>
+        <div class="item row text-center list-text-style" ng-repeat="item in StarksList">
+            <div class="col-sx-12"><img src="images/stark-ico.png" style="width: 20px" alt=""></div>
+            <div class="col-sx-12">Nombre: {{item.name}}</div>
+            <div class="col-sx-12">Papel: <b>{{item.role}}</b></div>
+            <div vlass="col-sx-12">Edad: {{item.age}}</div>
+        	    
+            <button class="btn btn-danger btn-sm" ng-click="eliminarProductoConcreto(item.$id)">For the whatch!</button>
+        </div>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

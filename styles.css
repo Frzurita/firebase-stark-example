@@ -1,0 +1,95 @@
+
+body {
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+6,cbebff+37,a1dbff+80 */
+background: #f0f9ff; /* Old browsers */
+background: -moz-linear-gradient(top,  #f0f9ff 6%, #cbebff 37%, #a1dbff 80%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(6%,#f0f9ff), color-stop(37%,#cbebff), color-stop(80%,#a1dbff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f0f9ff 6%,#cbebff 37%,#a1dbff 80%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f0f9ff 6%,#cbebff 37%,#a1dbff 80%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f0f9ff 6%,#cbebff 37%,#a1dbff 80%); /* IE10+ */
+background: linear-gradient(to bottom,  #f0f9ff 6%,#cbebff 37%,#a1dbff 80%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+background-size: 100% 200%;
+
+}
+.container {
+	background-color: #313131;
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-bottom: 10em;
+	top: 20px;
+	opacity: 0.7;
+	-webkit-box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.7);
+    box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.7);
+}
+
+.margin-top-2{
+	margin-top: 2em;
+}
+
+h3 {
+	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+
+.list-text-style{
+		font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+input[type='text'] {
+	margin-bottom: 10px;
+}
+
+button {
+	margin-left: 10px;
+	margin-top: 1em !important;
+	margin: 0 auto;
+}
+
+.item{
+	text-transform: capitalize;
+	border:1px solid #ACC98B;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #696464;
+	color: #EEEEEF;
+}
+
+.clima{
+	background-color:#A8DBEF;
+	border-color: #5B7580;
+}
+
+.list-header{
+	color: white ;
+	font-family: 
+}
+
+.item.ng-move,
+.item.ng-enter,
+.item.ng-leave {
+  transition:all linear 1s;
+}
+
+.item.ng-leave.ng-leave-active,
+.item.ng-move,
+.item.ng-enter {
+  opacity:0;
+}
+
+.item.ng-leave,
+.item.ng-move.ng-move-active,
+.item.ng-enter.ng-enter-active {
+  opacity:1;
+}
